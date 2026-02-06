@@ -225,7 +225,7 @@ class MITMProxy:
                 return
 
             # Build request for remote proxy
-            proxy_request = f"{method} http://{host}:{port}{path}{version}\r\n"
+            proxy_request = f"{method} http://{host}:{port}{path} {version}\r\n"
             proxy_request += f"Host: {host}\r\n"
             proxy_request += f"{self.proxy_auth_header}\r\n"
 
