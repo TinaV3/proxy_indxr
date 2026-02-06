@@ -272,7 +272,7 @@ class MITMProxy:
     async def connect_to_remote_proxy(self):
         """Connect to the remote proxy server using TLS"""
         try:
-            ssl_ctx = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
+            ssl_ctx = ssl.create_default_context(cafile="ca.crt")
             # automatski veruje Let's Encrypt CA
 
             reader, writer = await asyncio.open_connection(
