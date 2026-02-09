@@ -7,9 +7,9 @@ config = NativeHostConfig(
 )
 
 run_proxy(
-    remote_proxy_host="de-1.px.indexr.ai",
-    remote_proxy_port=3129,
-    proxy_username="proxy-checker",
-    proxy_password="taisharmalkier",
+    remote_proxy_host="px2.malkier.rs",
+    remote_proxy_port=3130,
+    proxy_username="cuki",
+    proxy_password="cuki",
     config=config
 )

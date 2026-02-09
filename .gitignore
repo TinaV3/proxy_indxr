@@ -1,0 +1,15 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE stuff
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
+
