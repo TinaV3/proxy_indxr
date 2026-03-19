@@ -1,0 +1,22 @@
+Scraper:
+
+
+sudo rm -rf macos/dist/*
+sudo bash macos/build_background.sh
+
+HOST
+
+ sudo rm -rf macos/dist/
+sudo bash macos/build_native_host.sh
+
+
+BUILDS
+
+sudo rm -rf macos/dist/peer2privacy_background.app
+sudo rm -rf macos/dist/peer2privacy.app
+sudo rm -rf macos/dist/*.dmg
+sudo mv ../idxr-peer2privacy-host/macos/dist/peer2privacy.app  ./macos/dist/
+
+ sudo mv ../idxr-scraper/macos/dist/peer2privacy_background ./macos/dist/
+
+sudo bash macos/installer/pkg.sh "1.0.6"
